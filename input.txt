@@ -1,0 +1,6 @@
+Falicornia attacks with 100 H, 101 E, 20 AT, 5 SG 
+Falicornia attacks with 50 H, 104 E, 6 AT, 2 SG 
+Falicornia attacks with 204 H, 20 E, 0 AT, 0 SG 
+Falicornia attacks with 250 H, 50 E, 20 AT, 15 SG  
+Falicornia attacks with 150 H, 96 E, 26 AT, 8 SG 
+Dragonborn attacks with 3 Dragons
