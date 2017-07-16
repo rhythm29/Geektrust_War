@@ -1,11 +1,7 @@
 # Lengaburu War
 
-Our problem is set in the planet of Lengaburu…in the distant
-distant galaxy of Tara B. Our protagonists are King Shan, the
-emperor of Lengaburu, and the evil queen Al Falcone of
-Falicornia
-Lengaburu has been at peace with her neighbours for over 50
-years but now…. planet Falicornia dares attack Lengaburu.
+Our problem is set in the planet of Lengaburu in the distant
+distant galaxy of Tara B. Lengaburu has been at peace with her neighbours for over 50 years but now, planet Falicornia dares attack Lengaburu.
 Write code to help King Shan identify the optimal force he
 should deploy to defend Lengaburu. Al Falcone has a larger army than King Shan. But she cannot leave her home planet unprotected. So she will always deploy a sub set of her army. Moreover King Shan’s army unit is 2X more stronger than Al Falcone’s.  
 
@@ -25,3 +21,26 @@ vice versa) and 1 Sling Gun can replace 2 Armoured Tanks (and vice versa).
 be used (Horses is lower than Elephants, is lower than Armoured Tanks, is lower than Sling Guns) 
 
 -----
+## Solution
+
+* **Basic unit of power is horses.** Horses are the battle resources with minimum battle power, so we can denote all battle resources' power wrt to horse power.
+* Each battle resource has two properties - (i) Battle Power: battle power of a resource with respect to the horse, (ii) strength: number of elements.
+
+### Code Organization
+
+* Code is broken down into 3 classes - (i) BattleResource (ii) Lengaburu (iii) Falicornia.
+* BattleResource: It denotes a single type of battle resource. Here horses, elephants etc are objects of this class.
+* Lengaburu: Class which encapsuates Lengaburu's battle resources.
+* Falicornia: Part of the enemy module. It encapsulates Falicornia's battle resources and the rules of battle against falicornia's army.
+* We also have a file to contain battle power values for each resource - `battle_power.rb`
+* Code execution starts from `run.rb`.
+
+### Execution Instructions
+
+* Create an input file. See `input.txt` as an example.
+* Execute as: `cat input.txt | ruby run.rb`.
+
+### How to add a new enemy
+* All enemy classes are contained in the module named `enemy`
+* If enemy contains new type of resource, add its battle power in the `battle_power.rb`.
+* Define battle method in respective enemy class to define rules of war.
