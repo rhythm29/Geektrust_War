@@ -1,3 +1,6 @@
+@Author: Rhythm Walia
+@url: https://github.com/rhythm29/Geektrust_War
+
 # Lengaburu War
 
 Our problem is set in the planet of Lengaburu in the distant
