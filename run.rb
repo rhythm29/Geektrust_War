@@ -1,3 +1,14 @@
+=begin
+
+## Solution
+
+* Basic unit of power is horses. Horses are the battle resources with minimum battle power, 
+so we can denote all battle resources' power wrt to horse power.
+* Each battle resource has two properties - (i) Battle Power: battle power of a resource with respect to the horse, 
+(ii) strength: number of elements.
+=end
+
+
 require './enemy/falicornia'
 require './battle_power'
 require './enemy/dragon_born'
@@ -5,7 +16,7 @@ require './enemy/dragon_born'
 while input = gets
   data = input.split(' attacks with ')
 
-  #Strength array for each battle resource
+  # Parse the string input to get the strength array.
   strength = data[1].split(',').map {|x| x[/\d+/].to_i}
 
   #Our enemy is Falicornia, parse accordingly and then battle
@@ -24,5 +35,4 @@ while input = gets
 
   #Enemy is set, Battle now!
   enemy.battle
-
 end

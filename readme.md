@@ -7,6 +7,11 @@ should deploy to defend Lengaburu. Al Falcone has a larger army than King Shan. 
 
 If Falicornia attacks Lengaburu with 2 Horses, 2 Elephants, 2 Armoured Tanks and 2 Sling Guns, Lengaburu will win the war if King Shan matches the attack with 1 Horse, 1 Elephant, 1 Armoured Tank and 1 Sling Gun. But not so fast! Al Falcone will surely attack with a larger army. Your coding challenge is to identify what battalions, and how many units of each battalion King Shan should deploy to match Al Falcone's attack
 
+### Assumptions
+* The project is written and used by the folks at Langaburu. 
+* Everytime an attack occur, Langaburu analyse the battle power and strength of the enemy and make a respective class in the *enemy* module.
+* Rules of war can be different for each enemy(depending on strength and power), hence the *battle function* is coded for each enemy.
+* e.g: There can be an enemy Orcania with horses twice as power as that of Langaburu, but elephants being 5 times weaker.
 
 ## Rules of the war
 
